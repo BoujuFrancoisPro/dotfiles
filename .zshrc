@@ -1,10 +1,15 @@
 export TERM="xterm-256color"
 export ZSH=/usr/share/oh-my-zsh
-export ZSH_POWER_LEVEL_THEME=/usr/share/zsh-theme-powerlevel10k
+
+export ZSH_CUSTOM=/usr/share/oh-my-zsh/custom
+ZSH_POWER_LEVEL_THEME=$ZSH_CUSTOM/themes/powerlevel10k
+source $ZSH_POWER_LEVEL_THEME/powerlevel10k.zsh-theme
+
+
+
 # Change local for tmux
 export LANG=en_IN.UTF-8
 
-source $ZSH_POWER_LEVEL_THEME/powerlevel10k.zsh-theme
 
 plugins=(archlinux
         jsontools
