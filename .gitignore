@@ -1,0 +1,14 @@
+/*
+!/.gitignore
+!/.p10k.zsh
+!.tmux/
+!.tmux/*
+!/.tmux.conf
+!/.ssh/
+.ssh/**
+!.ssh/config
+!.zshrc
+!/.config/
+!.config/lazydocker/**
+!/.bashrc
+!/.gitmodules
