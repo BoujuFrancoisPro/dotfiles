@@ -29,6 +29,8 @@ plugins=(archlinux
 alias resource="source ~/.zshrc"
 alias lzd="lazydocker"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias zfs="sudo zfs"
+alias zpool="sudo zpool"
 source $ZSH/oh-my-zsh.sh
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -43,5 +45,5 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # For the github github ssh config
-eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)" > /dev/null
 ssh-add ~/.ssh/cloud/github
